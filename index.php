@@ -6,10 +6,40 @@
 	<title></title>
 </head>
 <body>
-	<?php
-		echo "<p>Hello World!</p>";
-		echo "<p>my name is Luan Pereira da Silva</p>";
-		phpinfo();
-	?>
+	<pre>
+		<?php
+			echo "<p>Hello World!</p>";
+		
+			$name = "luan";
+			$lastName = "pereira";
+		
+			$fullName = $name . " " . $lastName;
+		
+			echo $name . " " . $lastName;
+		
+			echo "<hr>";
+		
+			$nascimento = new DateTime();
+
+			print_r($nascimento);
+
+			echo "<hr>";
+
+			var_dump($nascimento);
+		
+			exit;
+		
+			echo "<hr>";
+		
+			echo $fullName;
+			echo "<hr>";
+			echo $name;
+			echo "<hr>";
+		
+			var_dump($name);
+		
+			phpinfo();
+		?>
+	</pre>
 </body>
 </html>
